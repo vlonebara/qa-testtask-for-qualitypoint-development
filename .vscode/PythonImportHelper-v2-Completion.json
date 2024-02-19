@@ -1,0 +1,29 @@
+[
+    {
+        "label": "sum_of_digits",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def sum_of_digits(n):\n    return sum(int(digit) for digit in str(abs(n)))\nmax_sum = 0\nmax_num = 0\nwhile True:\n    try:\n        num = int(input(\"Введите целое число (или 0 для выхода): \"))\n    except ValueError:\n        print(\"Это не целое число, или не число вовсе. Пожалуйста, попробуйте еще раз.\")\n        continue",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "max_sum",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "max_sum = 0\nmax_num = 0\nwhile True:\n    try:\n        num = int(input(\"Введите целое число (или 0 для выхода): \"))\n    except ValueError:\n        print(\"Это не целое число, или не число вовсе. Пожалуйста, попробуйте еще раз.\")\n        continue\n    if num == 0:\n        break",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "max_num",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "max_num = 0\nwhile True:\n    try:\n        num = int(input(\"Введите целое число (или 0 для выхода): \"))\n    except ValueError:\n        print(\"Это не целое число, или не число вовсе. Пожалуйста, попробуйте еще раз.\")\n        continue\n    if num == 0:\n        break\n    elif sum_of_digits(num) > max_sum:",
+        "detail": "main",
+        "documentation": {}
+    }
+]
